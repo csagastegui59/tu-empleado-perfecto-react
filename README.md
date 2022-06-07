@@ -26,7 +26,3 @@ You may also see any lint errors in the console.
 ## Stay in touch
 
 - Developer - [Christian Sagástegui](https://github.com/csagastegui59)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
