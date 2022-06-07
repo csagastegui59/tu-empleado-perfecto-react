@@ -26,3 +26,11 @@ You may also see any lint errors in the console.
 ## Stay in touch
 
 - Developer - [Christian Sagástegui](https://github.com/csagastegui59)
+
+![](src/components/media/home.jpeg)
+![](src/components/media/employee%20added.png)
+![](src/components/media/company%20added.png)
+![](src/components/media/companies.jpeg)
+![](src/components/media/add%20employee.jpeg)
+![](src/components/media/add%20employee%20error.png)
+![](src/components/media/add%20company%20error.png)
