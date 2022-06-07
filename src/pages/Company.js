@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Employee } from '../components/Employee';
 
-export function Company() {
+export function Company({route}) {
   const [company, setCompany] = useState({});
   let { id } = useParams();
+  route(id)
   const [loading, setLoading] = useState(true);
 
   function capitalizeFirstLetter(string) {

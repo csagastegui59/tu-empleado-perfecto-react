@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../components/media/logo.png";
 
-export default function Navbar() {
+export default function Navbar({companyId}) {
   const location = useLocation();
   return (
     <div className="fixed w-full bg-blue-300 p-3 gap-4 flex flex-row">
@@ -17,7 +17,6 @@ export default function Navbar() {
       <p className="text-xl">
         <Link to="/companies">Compañías</Link>
       </p>
-      {console.log(location)}
       {location.pathname === "/companies" ? (
         <p className="text-xl">
           <Link to="/companyForm">Agregar Compañía</Link>
@@ -28,7 +27,7 @@ export default function Navbar() {
       location.pathname !== "/companyForm" &&
       location.pathname !== "/employeeForm" ? (
         <p className="text-xl">
-          <Link to="/employeeForm">Agregar Empleado</Link>
+          <Link to={`/companies/${companyId}/employeeForm`}>Agregar Empleado</Link>
         </p>
       ) : undefined}
     </div>

@@ -4,7 +4,6 @@ import { Company } from "../components/Company";
 
 export function Companies() {
   const [companies, setCompanies] = useState([]);
-
   useEffect(() => {
     fetch("http://localhost:3000/companies")
       .then((response) => response.json())
@@ -21,7 +20,7 @@ export function Companies() {
               <>
                 {" "}
                 <Link to={`/companies/${company.id}`}>
-                  <Company company={company} key={company.id} />
+                  <Company func={company.id} company={company} key={company.id} />
                 </Link>
               </>
             );
