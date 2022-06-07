@@ -1,7 +1,7 @@
 # Getting Started
 
 ## Prerequisites
-You need to clone the backend repo, and run it, you can do it by clicking the following link: (https://github.com/csagastegui59/tu-empleado-perfecto)
+You need to clone the backend repository, and run it, you can do it by clicking the following link: (https://github.com/csagastegui59/tu-empleado-perfecto)
 
 ## Installation
 

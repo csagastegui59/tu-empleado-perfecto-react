@@ -14,7 +14,7 @@ export function Companies() {
   return (
     <div>
       {companies.length !== 0 ? (
-        <div className="flex flex-col gap-10 shadow-lg bg-gray-300 rounded p-2 w-[400px] h-[40px]">
+        <div className="flex flex-col gap-10 pl-10">
           {companies.map((company) => {
             return (
               <>

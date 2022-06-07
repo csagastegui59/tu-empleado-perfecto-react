@@ -108,7 +108,7 @@ export function CreateCompanyForm() {
           <p className="text-red-500">Debes llenar todos los campos</p>
         ) : null}
         {submited ? (
-          <p className="text-green-500">Compañía creada exitosamente</p>
+          <p className="text-green-500">Compañía {name} creada exitosamente</p>
         ) : null}
       </form>
     </div>
