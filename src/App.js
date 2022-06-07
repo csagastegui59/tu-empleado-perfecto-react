@@ -5,17 +5,20 @@ import { Company } from './pages/Company';
 import Navbar from './components/Navbar';
 import { CreateCompanyForm } from './components/CreateCompanyForm';
 import { CreateEmployeeForm } from './components/CreateEmployeeForm';
+import { useState } from 'react';
 
 function App() {
+  const [companyId, setCompanyId] = useState('')
+  const route = (id) => {setCompanyId(id)}
   return (
     <div className='App'>
-      <Navbar/>
+      <Navbar companyId={companyId}/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/companies' element={<Companies />} />
-        <Route path='/companies/:id' element={<Company />} />
+        <Route path='/companies/:id' element={<Company route={route}/>} />
+        <Route path='/companies/:id/employeeForm' element={<CreateEmployeeForm/>} />
         <Route path='/companyForm' element={<CreateCompanyForm/>} />
-        <Route path='/employeeForm' element={<CreateEmployeeForm/>} />
       </Routes>
     </div>
   );
